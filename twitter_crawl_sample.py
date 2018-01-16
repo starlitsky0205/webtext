@@ -35,6 +35,7 @@ if len(tweets) == 0:
     sys.exit()
 
 for tweet in tweets:
+    tweet.text = tweet.text.replace("\n","")
     fp.write("%d\t%s\n" % (total, tweet.text))
     total += 1
     oldest = tweet.id
@@ -48,6 +49,7 @@ if oldest != -1:
         if len(tweets) == 0:
             break
         for tweet in tweets:
+            tweet.text = tweet.text.replace("\n","")
             fp.write("%d\t%s\n" % (total, tweet.text))
             total += 1
             oldest = tweet.id
