@@ -17,7 +17,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 meigen = []
-for line in open('reply.txt','r'):
+for line in open('censored.txt','r'):
     line = line.rstrip()
     meigen.append(line)
 

@@ -1,2 +1,2 @@
 MAILTO=""
-0 */5 * * * /usr/bin/python /home/rh/wts/twitter/twitter_meigen.py
+0 */5 * * * /usr/bin/python /home/t17746mm/webtext/twitter_reply.py

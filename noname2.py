@@ -1,9 +1,7 @@
-# Ueno Ryo (t17113ru)
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
 import re
+import sys
 
 def okikae(text,adict):
 
