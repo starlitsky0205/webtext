@@ -1,3 +1,5 @@
+# Ueno Ryo (t17113ru)
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
@@ -8,8 +10,6 @@ def okikae(text,adict):
     rx = re.compile(':'.join(adict))
     
     def dedictkey(text):
-        """ マッチした文字列の元であるkeyを返す
-        """
         for key in adict.keys():
             if re.search(key, text):
                 return key
@@ -107,3 +107,5 @@ f = open("abeshinzo.txt","r")
 f2 = open("censored.txt","a")
 for line in f:
    f2.write(okikae(line,dic))
+
+#参考文献：http://omoplatta.blogspot.jp/2010/10/python_30.html
